@@ -6,3 +6,4 @@ Don't get too excited just yet because it's far from finished. After many hours 
 Script assumes you've set a **PHILIPS_HUE_URI** environment variable to  
 ```http://<Hue Bridge Uri or IP Address>/api/<Philips Hue API Key>/lights```  
 
+Additionally, the **LightName** parameter is currently implementing a list of my own personal light names. You'll likely need to edit those.  
