@@ -8,7 +8,13 @@ Script assumes you've set a **PHILIPS_HUE_URI** environment variable to:
 ```
 http://<Hue Bridge Uri or IP Address>/api/<Philips Hue API Key>/lights
 ```  
+  
+## Quick Start
+Using **Windows PowerShell** (*not PowerShell Core*) you can make this script available to you by running the following commands.  
+```ps1
 
+```  
+## Get-Help Set-PhillipsHue -Full
 ```ps1
 
 NAME
