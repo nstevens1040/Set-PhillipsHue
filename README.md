@@ -16,6 +16,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
 iex (irm https://raw.githubusercontent.com/nstevens1040/Set-PhillipsHue/main/Set-PhilipsHue.ps1)
 ```  
+## Example
+Let's say you have a connected light named **Hue Blow**. It's already turned on, but you want to change the color to blue, set the saturation to 254, and set the brightness to 254. To accomplish that, you would run the following command.
+```ps1
+Set-PhilipsHue -LightName 'Hue Blow' -Color blue -Brightness 254 -Saturation 254
+```
 ## Get-Help Set-PhillipsHue -Full
 ```ps1
 
