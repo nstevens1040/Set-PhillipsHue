@@ -10,9 +10,11 @@ http://<Hue Bridge Uri or IP Address>/api/<Philips Hue API Key>/lights
 ```  
   
 ## Quick Start
-Using **Windows PowerShell** (*not PowerShell Core*) you can make this script available to you by running the following commands.  
+After you have set your **PHILIPS_HUE_URI** environment variable you can use **Windows PowerShell** (*not PowerShell Core*) to make this script available to you by running the following commands.  
 ```ps1
-
+Set-ExecutionPolicy Bypass -Scope Process -Force;
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
+iex (irm https://raw.githubusercontent.com/nstevens1040/Set-PhillipsHue/main/Set-PhilipsHue.ps1)
 ```  
 ## Get-Help Set-PhillipsHue -Full
 ```ps1
