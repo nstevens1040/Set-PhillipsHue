@@ -3,8 +3,11 @@ Windows PowerShell cmdlet to set the hue, brightness, saturation, effect, and po
   
 I was able to implement [this](https://stackoverflow.com/a/22649803) in C# in order to convert RGB values into XY values.  
 
-Script assumes you've set a **PHILIPS_HUE_URI** environment variable to  
-```http://<Hue Bridge Uri or IP Address>/api/<Philips Hue API Key>/lights```  
+Script assumes you've set a **PHILIPS_HUE_URI** environment variable to:  
+  
+```
+http://<Hue Bridge Uri or IP Address>/api/<Philips Hue API Key>/lights
+```  
 
 ```ps1
 
